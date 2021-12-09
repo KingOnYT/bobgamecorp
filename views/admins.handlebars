@@ -3,7 +3,7 @@
 <h4>Orders</h4>
 <ul class="list-group">
       {{#each orders}}
-      <li class="list-group-item">Name:{{this.name}}<br>Type: {{this.type}}<br>Amount: {{this.amout}} <br>Grade: {{this.grade}} <br>Email: {{this.email}} <br>Id: {{this.id}} <br> <form action="/api/v1/orders/delete/{{this.id}}" method="DELETE" class="form-horizontal">
+      <li class="list-group-item">Name:{{this.name}}<br>Type {{this.type}}<br>Amount: {{this.amout}} <br>Grade: {{this.grade}} <br>Email: {{this.email}} <br>Id: {{this.id}} <br> <form action="/api/v1/orders/delete/{{this.id}}" method="DELETE" class="form-horizontal">
 <input type="submit" value="delete">
       </form></li>
       {{/each}}
